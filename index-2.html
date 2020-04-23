@@ -1,0 +1,56 @@
+<html>
+
+
+<!-- Mirrored from simple-videochat.herokuapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 20:49:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Free Stuff LLC Chat Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row h-10 w-100">
+            <div class="col">
+                <select id="filter" class="w-100 bg-dark text-light ml-2 mt-2 select font-weight-bold border">
+                    <option value="none">Normal</option>
+                    <option value="grayscale(100%)">Free Stuff LLC</option>
+                    <option value="sepia(100%)">Meetings</option>
+                    <option value="contrast(150%)">Family only</option>
+                    <option value="blur(20px)">Board Meetings</option>
+                    <option value="invert(100%)">Test network</option>
+                    <option value="hue-rotate(180deg">Meetings 2</option>
+                    <option value="saturate(25)">Free Stuff LLC 2</option>
+                </select>
+            </div>
+            <div class="col">
+                <div class="float-right mt-3">
+                    <input class="form-check-input" type="checkbox" id="theme">
+                    <label class="form-check-label" for="theme">
+                        Dark Theme
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row h-90 w-100">
+            <div class="col-12 col-sm-6 d-flex justify-content-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" muted></video>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-center">
+                <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="bundle.js"></script>
+</body>
+
+
+<!-- Mirrored from simple-videochat.herokuapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 20:49:14 GMT -->
+</html>
